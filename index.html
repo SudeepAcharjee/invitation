@@ -1,0 +1,80 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Invitation</title>
+<style>
+p {
+text-align: center;
+font-size: 32px;
+font-family: Candara, Oswald;
+}
+img {
+display: block;
+margin: 0 auto;
+width: 25%;}
+@media only screen and (max-width: 600px) {
+  /* styles for screens smaller than 600px */
+}
+</style>
+</head>
+<body>
+<p>Can we hang out In Swaraswati Puja ?</p>
+<img src="https://media.tenor.com/zGm5acSjHCIAAAAM/cat-begging.gif">
+</body>
+<title>Botões</title>
+<style>
+  body{
+    background-color: aqua;
+  }
+#botao1 {
+position: fixed;
+top: 70%;
+left: 55%;
+transform: translate(-50%, -50%);
+  background-color: rgb(144, 255, 79); /* or any color you want */
+  color: white; /* or any color you want */
+  padding: 10px 20px; /* adjust as needed */
+  border-radius: 30px; /* adjust as needed */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#botao2 {
+position: absolute;
+ left: 39%;
+  top: 68%;
+  background-color: blue; /* or any color you want */
+  color: white; /* or any color you want */
+  padding: 10px 20px; /* adjust as needed */
+  border-radius: 30px; /* adjust as needed */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+}
+
+</style>
+</head>
+<body>
+<button id="botao1"><a href="https://forms.gle/q73isqMsrJFRF7G56">Next</a></button>
+
+<button id="botao2">NO</button>
+<script>
+const button2 = document.getElementById('botao2');
+let left = 40;
+button2.addEventListener('mouseover', function() {
+  if(left == 40){
+    left = 44;
+  }else{
+    left = 40;
+  }
+  this.style.left = left + '%';
+});
+
+</script>
+
+
+</body>
+</html>
